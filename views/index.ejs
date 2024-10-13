@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>Message Board</title>
+  </head>
+  <body>
+    <% messages.forEach((message) => { %>
+    <p><%- include('message', {message:message}) %></p>
+    <% }) %>
+  </body>
+</html>
+>
