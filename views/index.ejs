@@ -3,9 +3,10 @@
     <title>Message Board</title>
   </head>
   <body>
+    <h1>Message Board</h1>
+    <button onClick="window.location.href = '/new' ">New Message</button>
     <% messages.forEach((message) => { %>
     <p><%- include('message', {message:message}) %></p>
     <% }) %>
   </body>
 </html>
->
