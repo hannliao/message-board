@@ -1,12 +1,21 @@
 <html>
   <head>
-    <title>Message Board</title>
+    <title>New Message</title>
+    <link rel="stylesheet" href="/form.css" />
   </head>
   <body>
+    <button class="home-button" onClick="window.location.href='/'">
+      <h1>Message Board</h1>
+    </button>
     <form method="POST" action="/new">
-      <h1>New Message</h1>
-      <input name="messageUser" type="text" placeholder="User" />
-      <input name="messageText" type="text" placeholder="Message" />
+      <h2>New Message</h2>
+      <input name="messageUser" type="text" placeholder="User" required />
+      <textarea
+        name="messageText"
+        type="text"
+        placeholder="Message"
+        required
+      ></textarea>
       <button type="submit">Submit</button>
     </form>
   </body>

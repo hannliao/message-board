@@ -1,3 +1,4 @@
+const { v4: uuidv4 } = require('uuid');
 const messages = require('../db');
 
 module.exports = {
@@ -5,10 +6,11 @@ module.exports = {
     res.render('form', { title: 'New Message' });
   },
   post: (req, res) => {
-    messages.push({
+    messages.unshift({
+      id: uuidv4(),
       text: req.body.messageText,
       user: req.body.messageUser,
-      added: new Date(),
+      added: new Date().toLocaleString(),
     });
     res.redirect('/');
   },

@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Message Details</title>
+    <link rel="stylesheet" href="/open.css" />
+  </head>
+  <body>
+    <button class="home-button" onClick="window.location.href='/'">
+      <h1>Message Board</h1>
+    </button>
+    <div class="message-details">
+      <h2>Message Details</h2>
+      <ul class="message">
+        <li class="user"><%= message.user%></li>
+        <li class="date"><%= message.added%></li>
+        <li class="text"><%= message.text%></li>
+      </ul>
+    </div>
+  </body>
+</html>

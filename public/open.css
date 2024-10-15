@@ -1,0 +1,88 @@
+:root {
+  --lightgray: #bbb;
+  --border: grey;
+  --darkgray: #222;
+  --darkhover: #333;
+  --accent: rgb(223, 191, 234);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #131313;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background-color: var(--darkgray);
+  color: white;
+}
+button:hover {
+  background-color: var(--darkhover);
+}
+
+.home-button {
+  margin: 20px;
+  border: none;
+  background-color: transparent;
+}
+.home-button:hover {
+  background-color: transparent;
+}
+
+h1,
+h2 {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: var(--lightgray);
+  font-size: 18px;
+}
+
+.message-details {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  width: 100%;
+  padding: 20px 5px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.user {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.date {
+  font-size: 12px;
+  color: var(--border);
+}
+
+.text {
+  font-size: 16px;
+  padding: 16px 0;
+}

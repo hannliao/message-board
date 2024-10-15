@@ -1,12 +1,19 @@
 <html>
   <head>
     <title>Message Board</title>
+    <link rel="stylesheet" href="/app.css" />
   </head>
   <body>
-    <h1>Message Board</h1>
-    <button onClick="window.location.href = '/new' ">New Message</button>
-    <% messages.forEach((message) => { %>
-    <p><%- include('message', {message:message}) %></p>
-    <% }) %>
+    <button class="home-button" onClick="window.location.href='/'">
+      <h1>Message Board</h1>
+    </button>
+    <div class="message-board">
+      <button class="new-button" onClick="window.location.href = '/new' ">
+        +
+      </button>
+      <% messages.forEach((message) => { %>
+      <p><%- include('message', { message }) %></p>
+      <% }) %>
+    </div>
   </body>
 </html>

@@ -1,5 +1,13 @@
-<ul class="message">
-  <li><%= message.user%></li>
-  <li><%= message.added%></li>
-  <li><%= message.text%></li>
-</ul>
+<div class="message-container">
+  <ul class="message">
+    <li class="user"><%= message.user%></li>
+    <li class="date"><%= message.added%></li>
+    <li class="text"><%= message.text%></li>
+  </ul>
+  <button
+    class="open-button"
+    onClick="window.location.href = '/open/<%=message.id%>' "
+  >
+    >
+  </button>
+</div>

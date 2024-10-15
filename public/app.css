@@ -1,0 +1,102 @@
+:root {
+  --lightgray: #bbb;
+  --border: grey;
+  --darkgray: #222;
+  --darkhover: #333;
+  --accent: rgb(223, 191, 234);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #131313;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background-color: var(--darkgray);
+  color: white;
+}
+button:hover {
+  background-color: var(--darkhover);
+}
+
+.home-button {
+  margin: 20px;
+  border: none;
+  background-color: transparent;
+}
+.home-button:hover {
+  background-color: transparent;
+}
+
+h1 {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.message-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-container {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border);
+  padding: 30px 5px;
+}
+
+.message {
+  width: 100%;
+}
+
+.new-button {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 600px;
+  padding: 20px 0;
+  border: 1px dashed var(--accent);
+  border-radius: 10px;
+  color: var(--accent);
+}
+
+.open-button {
+  margin-left: 20px;
+  padding: 8px 12px;
+  border: none;
+}
+
+.user {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.date {
+  font-size: 12px;
+  color: var(--border);
+}
+
+.text {
+  font-size: 16px;
+  padding: 16px 0;
+}
