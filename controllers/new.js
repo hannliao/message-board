@@ -3,7 +3,7 @@ const messages = require('../db');
 
 module.exports = {
   get: (req, res) => {
-    res.render('form', { title: 'New Message' });
+    res.render('form');
   },
   post: (req, res) => {
     messages.unshift({

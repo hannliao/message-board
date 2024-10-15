@@ -1,0 +1,47 @@
+:root {
+  --lightgray: #bbb;
+  --border: grey;
+  --darkgray: #222;
+  --darkhover: #333;
+  --accent: rgb(223, 191, 234);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #131313;
+  color: white;
+}
+
+button {
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+}
+
+.home-button {
+  margin: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+h1 {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.error {
+  margin: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
