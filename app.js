@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('node:path');
@@ -29,7 +30,7 @@ app.use((err, req, res, next) => {
   res.render('error', { message: err.message || 'Internal Server Error' });
 });
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}...`);
 });

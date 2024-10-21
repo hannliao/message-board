@@ -1,17 +1,16 @@
-const { v4: uuidv4 } = require('uuid');
-const messages = require('../db');
+const db = require('../db/queries');
 
 module.exports = {
   get: (req, res) => {
     res.render('form');
   },
-  post: (req, res) => {
-    messages.unshift({
-      id: uuidv4(),
+  async post(req, res) {
+    const message = {
       text: req.body.messageText,
-      user: req.body.messageUser,
+      username: req.body.messageUsername,
       added: new Date().toLocaleString(),
-    });
+    };
+    await db.createMessage(message);
     res.redirect('/');
   },
 };

@@ -1,10 +1,10 @@
-const messages = require('../db');
+const db = require('../db/queries');
 const NotFoundError = require('../errors/NotFoundError');
 
 module.exports = {
-  get: (req, res) => {
+  async get(req, res) {
     let messageId = req.params.id;
-    let message = messages.find((message) => message.id == messageId);
+    let message = await db.getMessage(messageId);
 
     if (!message) {
       throw new NotFoundError('Message not found');

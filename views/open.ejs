@@ -10,8 +10,8 @@
     <div class="message-details">
       <h2>Message Details</h2>
       <ul class="message">
-        <li class="user"><%= message.user%></li>
-        <li class="date"><%= message.added%></li>
+        <li class="username"><%= message.username%></li>
+        <li class="date"><%= new Date(message.added).toLocaleString() %></li>
         <li class="text"><%= message.text%></li>
       </ul>
     </div>
