@@ -1,6 +1,6 @@
 # message-board
 
-Message board using NodeJS/Express and Model-View-Controller (MVC) pattern.
+Message board using NodeJS/Express and Model-View-Controller (MVC) pattern. Integrated PostgreSQL database for data persistence.
 
 ## Features
 
@@ -10,8 +10,9 @@ Message board using NodeJS/Express and Model-View-Controller (MVC) pattern.
 
 ## Built with
 
-- [NodeJS](https://nodejs.org/en)
-- [Express](https://expressjs.com/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Node.js](https://nodejs.org/en)
+- [Express.js](https://expressjs.com/)
 - JavaScript
 - [EJS](https://ejs.co/)
 - CSS
